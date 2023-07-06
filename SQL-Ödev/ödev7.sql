@@ -22,6 +22,6 @@ GROUP BY store_id;
 
 SELECT country_id,COUNT(country_id) FROM city
 GROUP BY country_id
-ORDER BY COUNT(country_id) DESC
+ORDER BY MAX(country_id) DESC
 LIMIT 1;
 
